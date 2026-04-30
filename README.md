@@ -12,6 +12,8 @@ pinned: false
 
 # portfolio
 
+**Live demo:** https://huggingface.co/spaces/LukeLovekin/about_me_agent
+
 A personal portfolio chatbot where visitors can ask an AI about Luke's background, projects, and skills. Backed by ChromaDB RAG over curated personal data files, streamed through Groq (Llama 3.3 70B), and served via a clean Gradio chat UI. A GitHub MCP server integration is planned for Phase 2 to pull live project data directly from GitHub.
 
 ## How it works
