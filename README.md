@@ -1,3 +1,15 @@
+---
+title: Luke Lovekin - Software Engineer
+emoji: 🤖
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: "6.13.0"
+python_version: "3.12"
+app_file: app.py
+pinned: false
+---
+
 # portfolio
 
 A personal portfolio chatbot where visitors can ask an AI about Luke's background, projects, and skills. Backed by ChromaDB RAG over curated personal data files, streamed through Groq (Llama 3.3 70B), and served via a clean Gradio chat UI. A GitHub MCP server integration is planned for Phase 2 to pull live project data directly from GitHub.

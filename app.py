@@ -69,7 +69,7 @@ def chat(message: str, raw_history: list[dict]):
 
 
 def build_ui() -> gr.Blocks:
-    with gr.Blocks(title="Luke Lovekin — AI Engineer") as demo:
+    with gr.Blocks(title="Luke Lovekin — Software Engineer") as demo:
 
         # ── Header ──────────────────────────────────────
         with gr.Row(elem_id="header"):
@@ -77,7 +77,7 @@ def build_ui() -> gr.Blocks:
                 f'<div style="display:flex;align-items:center;gap:20px;padding:8px 0">'
                 f'{PORTRAIT_HTML}'
                 f'<div><h1 style="font-size:1.25rem;font-weight:600;color:#e8eaf0;margin:0">Luke Lovekin</h1>'
-                f'<p style="font-size:0.85rem;color:#8b8fa8;margin:2px 0 0">Senior Software Engineer · Ask me anything</p></div>'
+                f'<p style="font-size:0.85rem;color:#8b8fa8;margin:2px 0 0">Software Engineer · Ask me anything</p></div>'
                 f'</div>'
             )
 
