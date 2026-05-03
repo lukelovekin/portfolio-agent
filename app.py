@@ -35,7 +35,7 @@ def _load_portrait() -> str:
 PORTRAIT_HTML = _load_portrait()
 
 SUGGESTIONS = [
-    "What has Luke worked on recently (professionally)?",
+    "What has Luke worked on recently?",
     "What personal projects has he built recently?",
     "What's his engineering background?",
     "What is he looking for?",

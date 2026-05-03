@@ -43,6 +43,13 @@ body, .gradio-container {
 #chatbot {
     background: #0f1117 !important;
     border: none !important;
+    scroll-behavior: smooth !important;
+}
+
+#chatbot > div,
+#chatbot .wrap,
+#chatbot .bubble-wrap {
+    scroll-behavior: smooth !important;
 }
 
 .message.user {
