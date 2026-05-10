@@ -4,10 +4,10 @@
 Luke Lovekin
 
 ## One-liner
-Full Stack Software Engineer with 8 years of experience, actively building AI skills through hands-on personal projects and IBM professional certifications.
+Full Stack Software Engineer with 7 years of experience, actively building AI skills through hands-on personal projects and IBM professional certifications.
 
 ## Summary
-Luke is a Software Engineer with over 8 years of experience at Senior and Lead level across HealthTech, Travel, Insurance, Marketing, and Construction. He brings a strong foundation in distributed systems, event-driven architecture, and microservices, and is actively developing AI engineering skills through self-directed projects and IBM professional certifications in Generative AI and RAG. His recent personal projects — built independently to put that learning into practice — span agentic systems, RAG pipelines, multi-agent orchestration, and LLM integrations.
+Luke is a Software Engineer with over 7 years of experience at Senior and Lead level across HealthTech, Travel, Insurance, Marketing, and Construction. He brings a strong foundation in distributed systems, event-driven architecture, and microservices, and is actively developing AI engineering skills through self-directed projects and IBM professional certifications in Generative AI and RAG. His recent personal projects — built independently to put that learning into practice — span agentic systems, RAG pipelines, multi-agent orchestration, and LLM integrations.
 He's looking for Senior Software Engineering roles — backend-leaning but comfortable full stack. Remote only. No strong preference on company size or industry; he's found something worth doing in every sector he's worked in. Open to both permanent and contract. Roles that involve AI integration work are a bonus, but not a requirement — he's primarily looking for good engineering problems and a team that takes the craft seriously.
 
 ## Location

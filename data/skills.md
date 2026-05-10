@@ -47,7 +47,11 @@
 
 ## Currently learning
 
-### IBM Generative AI Engineering Professional Certificate (in progress, expected May 2026)
+### DeepLearning.AI: Agentic AI (completed)
+
+### IBM: RAG and Agentic AI Professional Certificate (completed)
+
+### IBM Generative AI Engineering Professional Certificate (in progress, completing May 2026)
 16-course program covering:
 - Deep learning and neural networks with Keras
 - Transformer architecture — BERT, GPT, foundational NLP models

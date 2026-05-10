@@ -4,7 +4,7 @@
 
 ---
 
-## Montu *(most recent role)*
+## Montu *(most recent role · Dec 2024 – Apr 2026)*
 
 **Stack:** TypeScript, Node.js, NestJS, React, AWS, Google BigQuery, Datadog
 
