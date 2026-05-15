@@ -22,3 +22,25 @@ Demonstrates: multi-agent orchestration, Claude SDK tool use, agentic loop desig
 
 ## This portfolio chatbot
 RAG-backed AI that answers questions about Luke — ChromaDB vector search over personal data files and resume, Groq streaming (Llama 3.3 70B), Gradio UI, Pydantic state models, and per-session rate limiting. Phase 2 will add a LangGraph ReAct agent with a custom FastMCP server and live GitHub repo data via the GitHub MCP server.
+
+## SureBuild AI
+
+Australian construction compliance SaaS. Builders and certifiers ask NCC compliance questions or upload site photos; the system retrieves cited, jurisdiction-aware results verified against the database — the AI cannot return a hallucinated clause number.
+
+**Backend:** FastAPI, PostgreSQL, pgvector, asyncpg, Docker
+
+**AI/ML stack:**
+- Hybrid RAG — two-stage retrieval combining pgvector dense search with PostgreSQL full-text search (tsvector/GIN), merged via weighted scoring, then cross-encoder reranking over the top candidates before passing to the LLM — production retrieval architecture, not naive vector-only search
+- PydanticAI agents with structured output and tool use for retrieval; two-layer hallucination prevention: citation constraints at the prompt level plus post-run database verification — every cited clause cross-checked against the knowledge base before a response is returned
+- Custom NCC knowledge graph — XML ingest pipeline parsing ABCB government documents into a clause-level vector store with typed cross-references between NCC requirements and the Australian Standards they cite; automatic jurisdiction routing per state
+- RAGAS evaluation pipeline — retrieval quality measured against a fixed test set (faithfulness, context precision, context recall, answer relevancy); changes to the retrieval pipeline are score-gated, not shipped on feel
+- Claude Sonnet — multimodal compliance analysis from site photos, jurisdiction-aware prompting
+- OpenAI embeddings for dense retrieval; hybrid index combining cosine similarity with full-text search
+- Vision pipeline (in development) — YOLOv11 detection → SAM2 segmentation → Claude reasoning; LoRA fine-tuning on a labelled Australian construction image dataset, experiment tracking with MLflow and DVC
+- MCP server — exposes the compliance engine as a callable tool via the Model Context Protocol; external agents can invoke SureBuild as a tool
+
+**Frontend:** Next.js 15, TypeScript strict, Zustand, Tailwind, react-markdown
+
+**Integrations:** Procore and Autodesk Construction Cloud webhook connectors; MCP server for agent-to-agent interop
+
+**Key challenge:** Compliance tooling cannot hallucinate — a wrong NCC clause number has real legal and safety consequences. The architecture replaces soft prompt constraints with a structural guarantee: post-run DB verification that cannot be circumvented by the model, combined with RAGAS-gated retrieval changes that bring measurement discipline most AI engineers skip.
